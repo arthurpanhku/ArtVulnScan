@@ -4,6 +4,14 @@
 A Python-powered tool harnessing Nmap for automated network vulnerability scanning, complete with detailed report generation.
 This is an automated cybersecurity tool designed for everyone to use, consolidating only open-source and free software. Built with Python and powered by Nmap, it simplifies network vulnerability scanning by detecting services, identifying potential security risks, and generating detailed reports—all with an accessible, user-friendly interface.
 
+## Disclaimer
+
+ArtVulnScan is a tool designed specifically for security research and vulnerability scanning, intended for use only in legally authorized scenarios. Users must ensure that their actions comply with applicable laws and regulations and obtain explicit permission from the owner of the target system.
+
+It is strictly prohibited to use this tool for any illegal purposes, including but not limited to unauthorized network attacks, data theft, or other malicious activities. The developers are not responsible for any legal consequences or damages resulting from the misuse of this tool.
+
+By using this tool, you agree to comply with all relevant laws and assume full responsibility for any consequences arising from its use.
+
 ## What It Does
 
 This project delivers a straightforward, robust script to scan networks or hosts for vulnerabilities using Nmap. It detects services and versions, runs vulnerability checks via Nmap scripts, and saves results in timestamped text files. Built for security enthusiasts, network admins, and penetration testers, it simplifies automated security assessments.
