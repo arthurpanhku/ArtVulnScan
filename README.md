@@ -46,7 +46,7 @@ pip install python-nmap
 1. Clone the repo:
 ```bash
 git clone https://github.com/arthurpanhku/ArtVulnScan.git
-cd automated-vulnerability-scanner
+cd ArtVulnScan
 ```
 
 2. Verify prerequisites are installed (see above).
