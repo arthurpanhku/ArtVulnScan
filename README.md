@@ -1,4 +1,4 @@
-# Automated Vulnerability Scanner
+# ArtVulnScan - Best Automated Vulnerability Scanner
 
 
 A Python-powered tool harnessing Nmap for automated network vulnerability scanning, complete with detailed report generation.
