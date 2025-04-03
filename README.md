@@ -133,16 +133,63 @@ Licensed under the [MIT License](LICENSE)—check the `LICENSE` file for details
 
 Hit up GitHub Issues or email me at [u3638376@connect.hku.hk](mailto:u3638376@connect.hku.hk).
 
+
+---
+
+## Prerequisites
+
+Install the additional dependency:
+
+```bash
+pip install schedule
+```
+
+## How to Run
+
+```bash
+sudo python3 vuln_scanner.py
+```
+
+- Input a target (e.g., `scanme.nmap.org`).
+- Choose a frequency:
+  - `1` for every day
+  - `2` for every week
+  - `3` for every month
+- Enter a future date (e.g., `2025-04-10`).
+- The script will wait until the specified date, then scan according to the schedule.
+
+## Example Interaction
+
+```
+Automated Vulnerability Scanner v1.2
+===================================
+A free, open-source tool for everyone
+Note: Requires root privileges (sudo) for best results
+Warning: Only scan targets you have permission to test
+===================================
+
+Enter target IP or hostname (e.g., 192.168.1.1 or scanme.nmap.org): scanme.nmap.org
+
+Choose scan frequency:
+1. Every day
+2. Every week
+3. Every month
+Enter choice (1-3): 2
+Enter first scan date (YYYY-MM-DD): 2025-04-10
+First scan scheduled for 2025-04-10 00:00:00. Waiting...
+Scheduled weekly scans starting from 2025-04-10 00:00:00
+```
+
+## Notes
+
+- **Time Precision**: Scans run at the time of day the script starts after the first date (e.g., if you run it at 14:30, scans occur at 14:30 on scheduled days). For exact times, modify the `.at()` parameter in the script.
+- **Monthly Approximation**: True monthly scheduling requires more complex logic (e.g., using `dateutil`). This version uses 4 weeks for simplicity.
+- **Background Running**: To run indefinitely, consider using a daemon or `nohup`. Example:
+  ```bash
+  nohup sudo python3 vuln_scanner.py &
+  ```
+
+
 ---
 Scan smart, stay safe!
 ---
-
-### Notes
-- This is the standalone `README.md` content in Markdown format, ready to be saved as `README.md` in your project directory.
-- Replace `yourusername` with your actual GitHub username before uploading.
-- You can add this to your repository with:
-  ```bash
-  git add README.md
-  git commit -m "Add README documentation"
-  git push origin main
-  ```
