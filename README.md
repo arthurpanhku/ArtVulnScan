@@ -27,27 +27,27 @@ To get started, you’ll need:
 ### Setup Steps
 
 1. **Install Nmap**:
-   - Ubuntu/Debian:
-     ```bash
-     sudo apt-get install nmap
-     ```
-   - Red Hat/CentOS:
-     ```bash
-     sudo yum install nmap
-     ```
+- Ubuntu/Debian:
+```bash
+sudo apt-get install nmap
+```
+- Red Hat/CentOS:
+```bash
+sudo yum install nmap
+```
 
 2. **Install python-nmap**:
-   ```bash
-   pip install python-nmap
-   ```
+```bash
+pip install python-nmap
+```
 
 ## Getting Started
 
 1. Clone the repo:
-   ```bash
-   git clone https://github.com/yourusername/automated-vulnerability-scanner.git
-   cd automated-vulnerability-scanner
-   ```
+```bash
+git clone https://github.com/yourusername/automated-vulnerability-scanner.git
+cd automated-vulnerability-scanner
+```
 
 2. Verify prerequisites are installed (see above).
 
@@ -133,7 +133,6 @@ Licensed under the [MIT License](LICENSE)—check the `LICENSE` file for details
 
 Hit up GitHub Issues or email me at [u3638376@connect.hku.hk](mailto:u3638376@connect.hku.hk).
 
-
 ---
 
 ## Prerequisites
@@ -185,10 +184,9 @@ Scheduled weekly scans starting from 2025-04-10 00:00:00
 - **Time Precision**: Scans run at the time of day the script starts after the first date (e.g., if you run it at 14:30, scans occur at 14:30 on scheduled days). For exact times, modify the `.at()` parameter in the script.
 - **Monthly Approximation**: True monthly scheduling requires more complex logic (e.g., using `dateutil`). This version uses 4 weeks for simplicity.
 - **Background Running**: To run indefinitely, consider using a daemon or `nohup`. Example:
-  ```bash
-  nohup sudo python3 vuln_scanner.py &
-  ```
-
+```bash
+nohup sudo python3 vuln_scanner.py &
+```
 
 ---
 Scan smart, stay safe!
