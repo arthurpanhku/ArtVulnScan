@@ -1,6 +1,3 @@
-Here’s the `README.md` content in Markdown format, as a standalone document without the additional project code or other sections. This is the rewritten version from our previous interaction, formatted cleanly for your GitHub repository.
-
----
 
 ```markdown
 # Automated Vulnerability Scanner
