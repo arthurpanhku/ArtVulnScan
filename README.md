@@ -96,7 +96,7 @@ Tweak the `arguments` in the `scan_target` method of `vuln_scanner.py` for custo
 ## Project Layout
 
 ```
-automated-vulnerability-scanner/
+ArtVulnScan/
 ├── vuln_scanner.py  # Core script
 ├── README.md        # Documentation
 └── .gitignore       # Excludes generated files (optional)
