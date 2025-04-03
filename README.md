@@ -3,6 +3,7 @@
 # Automated Vulnerability Scanner
 
 A Python-powered tool harnessing Nmap for automated network vulnerability scanning, complete with detailed report generation.
+This is an automated cybersecurity tool designed for everyone to use, consolidating only open-source and free software. Built with Python and powered by Nmap, it simplifies network vulnerability scanning by detecting services, identifying potential security risks, and generating detailed reports—all with an accessible, user-friendly interface.
 
 ## What It Does
 
