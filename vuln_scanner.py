@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-Automated Vulnerability Scanner
+ArtVulnScan: Automated Vulnerability Scanner
 A cybersecurity tool for everyone, using only open-source software (Nmap).
 Performs automated network vulnerability scans on a user-defined schedule.
 Version: 1.2
